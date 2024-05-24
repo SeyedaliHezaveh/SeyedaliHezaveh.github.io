@@ -15,9 +15,7 @@
             height: auto;
             border-radius: 10px;
         }
-        h1, p {
-            color: white;
-        }
+
         .intro {
           display: grid;
           grid-template-columns: 1fr 2fr;
@@ -31,19 +29,7 @@
           margin-bottom: 30px;
           position: relative;
         }
-        
-        .intro h1::before {
-          content: '';
-          display: block;
-          width: 130px;
-          height: 100px;
-          position: absolute;
-          background: url('../img/detalhe.svg') no-repeat center;
-          top: -15px;
-          left: -40px;
-          z-index: -1;
-        }
-        
+
         .intro p {
           font-size: 1.5rem;
           color: #525252;
@@ -73,14 +59,6 @@
           }
         }
         
-        @media (max-width: 400px) {
-          .intro {
-            grid-template-columns: 1fr;
-          }
-          .intro img {
-            display: none;
-          }
-        }
     </style>
 </head>
 <body style = "background-color: blue">
